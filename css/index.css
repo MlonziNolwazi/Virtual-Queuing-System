@@ -1,0 +1,72 @@
+body {
+    background-color: #f8f9fa;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+header {
+    background-color: #212529;
+    color: #fff;
+    padding: 1.5rem;
+    text-align: center;
+}
+.hero {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 1rem;
+    text-align: center;
+}
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+.hero p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    color: #6c757d;
+}
+.hero .content {
+    bottom: 8.5rem;
+}
+.hero {
+    background: url('../assets/img/queue.png') center center / cover no-repeat;
+    position: relative;
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(255,255,255,0.6); /* light overlay */
+    backdrop-filter: blur(3px); /* subtle blur */
+    z-index: 0;
+}
+
+.hero .content {
+    position: relative;
+    z-index: 1;
+    color: #333;
+}
+
+footer {
+    background-color: #212529;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+.btn-neutral {
+    background-color: #6c757d;
+    color: white;
+}
+.btn-neutral:hover {
+    background-color: #5a6268;
+}
