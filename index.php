@@ -4,7 +4,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Virtual Queuing System</title>
-        <base href="http://localhost/projects/Virtual-Queuing-System/">
+        <?php include 'php/config/base_config.php'; ?>
+        <base href="<?php echo $baseUrl; ?>">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="css/index.css">
     </head>
