@@ -1,11 +1,4 @@
-body {
-    background-color: #f9f9f9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    font-family: Arial, sans-serif;
-}
+
 .signup-container {
     background: white;
     padding: 40px;
@@ -13,12 +6,44 @@ body {
     /* box-shadow: 0 4px 12px rgba(0,0,0,0.1); */
     width: 100%;
     max-width: 600px;
-    text-align: center;
+    text-align: left;
 }
+.subscribe-container {
+    background: rgba(255, 255, 255, 0.017);
+    padding: 40px;
+    border-radius: 8px;
+    /* box-shadow: 0 4px 12px rgba(0,0,0,0.1); */
+    width: 100%;
+    max-width: 600px;
+    text-align: left;
+}
+/* Instead of centering everything via body */
+body {
+    background-color: #f9f9f9;
+ 
+    margin: 0;
+}
+
+/* Use a wrapper to center the signup card only */
+.signup-wrapper {
+    /* min-height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .signup-logo img {
     width: 320px;
     height: 150px;
     margin-bottom: 10px;
+}
+.signup-logo {
+    margin-bottom: 10px;
+    text-align: center !important;
+}
+.signup-container h2 {
+    text-align: center;
 }
 .form-control {
     margin-bottom: 15px;
@@ -26,6 +51,29 @@ body {
 .form-check-label {
     font-size: 0.9rem;
 }
+
+/* Password toggle button styling */
+.input-group .btn-outline-secondary {
+    border-left: 0;
+    border-color: #ced4da;
+}
+
+.input-group .btn-outline-secondary:hover {
+    background-color: #f8f9fa;
+    border-color: #ced4da;
+    color: #6c757d;
+}
+
+.input-group .btn-outline-secondary:focus {
+    box-shadow: none;
+    border-color: #86b7fe;
+}
+
+.input-group .form-control:focus + .btn-outline-secondary,
+.input-group .btn-outline-secondary:focus {
+    border-color: #86b7fe;
+}
+
 .login-link {
     margin-top: 20px;
     display: block;
