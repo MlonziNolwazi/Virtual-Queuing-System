@@ -1,4 +1,4 @@
-# 📲 Virtual Queuing System
+# 📲 Smart-Q
 
 A real-time web-based **queue management system** that helps users schedule appointments and manage wait times at service providers such as banks, clinics, and government offices. The system provides appointment booking, geolocation, dynamic slot availability, and real-time queue tracking.
 
