@@ -1,0 +1,59 @@
+body {
+  font-size: 0.9rem;
+  margin: 0;
+  padding: 0;
+  padding-top: 56px; /* Account for fixed navbar height */
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.row {
+  margin: 0;
+  min-height: calc(100vh - 56px); /* Full height minus navbar */
+}
+
+.sidebar {
+  height: calc(100vh - 56px); /* Full height minus navbar */
+  padding-top: 1rem;
+  border-right: 1px solid #ddd;
+  position: fixed;
+  top: 56px; /* Start below the navbar */
+  left: 0;
+  z-index: 1000;
+  background-color: #f8f9fa;
+  overflow-y: auto; /* Allow scrolling if content is too long */
+}
+
+main {
+  padding-top: 1rem;
+  min-height: calc(100vh - 56px);
+  margin-left: 0;
+}
+
+/* Adjust main content margin for larger screens when sidebar is visible */
+@media (min-width: 992px) {
+  main {
+    margin-left: 16.66667%; /* col-lg-2 width */
+  }
+}
+
+@media (max-width: 991.98px) {
+  .sidebar {
+    display: none; /* Hide desktop sidebar on mobile */
+  }
+  
+  main {
+    margin-left: 0 !important;
+    width: 100%;
+  }
+}
+
+/* Mobile offcanvas styles */
+.offcanvas {
+  top: 56px !important; /* Start below navbar */
+  height: calc(100vh - 56px) !important; /* Adjust height */
+}
+
+ .rounded-circle { border: 2px solid #ccc; object-fit: cover; }
